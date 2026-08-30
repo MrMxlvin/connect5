@@ -4,7 +4,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Mxlvin</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +11,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
 body{
   background:#060B16;
@@ -47,10 +50,12 @@ body{
   content:"";
   position:absolute;
   inset:0;
-  background:linear-gradient(to top,
+  background:linear-gradient(
+    to top,
     rgba(5,8,15,.95) 8%,
     rgba(5,8,15,.35) 45%,
-    rgba(5,8,15,.08));
+    rgba(5,8,15,.08)
+  );
 }
 
 .heroText{
@@ -65,6 +70,7 @@ body{
   font-size:52px;
   line-height:.9;
   letter-spacing:.5px;
+  color:white;
 }
 
 .role{
@@ -98,7 +104,6 @@ body{
   align-items:center;
   justify-content:space-between;
   text-decoration:none;
-  color:white;
   padding:16px 18px;
   border-radius:18px;
   margin:12px 0;
@@ -116,36 +121,66 @@ body{
 }
 
 .icon{
-  width:22px;
-  height:22px;
+  width:24px;
+  height:24px;
+  flex-shrink:0;
 }
 
 .label{
-  font-weight:500;
+  font-weight:600;
+  font-size:16px;
 }
 
 .sub{
   font-size:12px;
-  color:#CBD5E1;
   margin-top:2px;
 }
 
+.arrow{
+  font-size:18px;
+  opacity:.72;
+}
+
+/* Instagram */
+
 .ig{
   background:linear-gradient(135deg,#833AB4,#E1306C,#F77737);
+  color:white;
 }
+
+.ig .sub{
+  color:rgba(255,255,255,.88);
+}
+
+/* WhatsApp */
 
 .wa{
   background:#25D366;
-  color:#04140A;
+  color:white;
 }
+
+.wa .label{
+  color:white;
+}
+
+.wa .sub{
+  color:rgba(255,255,255,.92);
+}
+
+.wa .arrow{
+  color:white;
+}
+
+/* Email */
 
 .mail{
   background:#111827;
   border:1px solid rgba(255,255,255,.06);
+  color:white;
 }
 
-.arrow{
-  opacity:.65;
+.mail .sub{
+  color:#CBD5E1;
 }
 
 .footer{
@@ -162,81 +197,92 @@ body{
 
 <div class="container">
 
-<div class="hero">
-<img src="1002467138.jpg" alt="Mxlvin">
+  <div class="hero">
+    <img src="1002467138.jpg" alt="Mxlvin">
 
-<div class="heroText">
-<div class="name">Mxlvin</div>
-<div class="role">Singer · Songwriter · Performer</div>
-</div>
-</div>
+    <div class="heroText">
+      <div class="name">Mxlvin</div>
+      <div class="role">Singer · Songwriter · Performer</div>
+    </div>
+  </div>
 
-<div class="panel">
+  <div class="panel">
 
-<div class="quote">
-“Music is how I translate moments into memories.”
-</div>
+    <div class="quote">
+      “Music is how I translate moments into memories.”
+    </div>
 
-<a class="button ig" href="https://www.instagram.com/sir.mxlvin?igsi=MWkxYTY4djZ5NW03OA==">
-<div class="left">
+    <!-- Instagram -->
 
-<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8">
-<rect x="3" y="3" width="18" height="18" rx="5"/>
-<circle cx="12" cy="12" r="4"/>
-<circle cx="17.5" cy="6.5" r="1"/>
-</svg>
+    <a class="button ig" href="https://www.instagram.com/sir.mxlvin?igsi=MWkxYTY4djZ5NW03OA==">
 
-<div>
-<div class="label">Instagram</div>
-<div class="sub">@sir.mxlvin</div>
-</div>
+      <div class="left">
 
-</div>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="18" height="18" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="1"/>
+        </svg>
 
-<div class="arrow">↗</div>
-</a>
+        <div>
+          <div class="label">Instagram</div>
+          <div class="sub">@sir.mxlvin</div>
+        </div>
 
-<a class="button wa" href="https://wa.me/263778690204">
-<div class="left">
+      </div>
 
-<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#04140A" stroke-width="1.8">
-<path d="M20 12a8 8 0 1 1-15 4l-1 4 4-1a8 8 0 0 1 12-7z"/>
-<path d="M9.5 8.5c.3-.6.7-.6 1-.6.2 0 .4 0 .6.5l.5 1.2c.1.3.1.5 0 .7l-.4.6a6.5 6.5 0 0 0 2.8 2.8l.6-.4c.2-.1.4-.1.7 0l1.2.5c.5.2.5.4.5.6 0 .3 0 .7-.6 1-.6.3-1.4.5-2.2.2-2.1-.8-4.4-3.1-5.2-5.2-.3-.8-.1-1.6.2-2.2z"/>
-</svg>
+      <div class="arrow">↗</div>
 
-<div>
-<div class="label">Bookings & Collaborations</div>
-<div class="sub">WhatsApp</div>
-</div>
+    </a>
 
-</div>
+    <!-- WhatsApp -->
 
-<div class="arrow">↗</div>
-</a>
+    <a class="button wa" href="https://wa.me/263778690204">
 
-<a class="button mail" href="mailto:zanzamelvin@gmail.com">
-<div class="left">
+      <div class="left">
 
-<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8">
-<rect x="3" y="5" width="18" height="14" rx="2"/>
-<path d="M3 7l9 6 9-6"/>
-</svg>
+        <svg class="icon" viewBox="0 0 24 24" fill="white">
+          <path d="M20.52 3.48A11.86 11.86 0 0012.06 0C5.52 0 .19 5.33.19 11.87c0 2.09.55 4.13 1.6 5.93L0 24l6.39-1.68a11.86 11.86 0 005.67 1.45h.01c6.54 0 11.87-5.33 11.87-11.87 0-3.17-1.23-6.15-3.42-8.42zm-8.46 18.3h-.01a9.88 9.88 0 01-5.03-1.38l-.36-.21-3.79 1 1.01-3.7-.23-.38a9.9 9.9 0 01-1.52-5.24C2.13 6.42 6.6 1.95 12.06 1.95c2.63 0 5.1 1.02 6.96 2.88a9.79 9.79 0 012.89 6.96c0 5.46-4.47 9.93-9.85 9.93zm5.44-7.39c-.3-.15-1.77-.87-2.05-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.08-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.76-1.66-2.06-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.08-.8.37-.27.3-1.05 1.02-1.05 2.48 0 1.47 1.08 2.89 1.23 3.09.15.2 2.12 3.24 5.13 4.54.72.31 1.28.5 1.72.64.72.23 1.38.2 1.9.12.58-.09 1.77-.72 2.02-1.42.25-.69.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35z"/>
+        </svg>
 
-<div>
-<div class="label">Management & Enquiries</div>
-<div class="sub">zanzamelvin@gmail.com</div>
-</div>
+        <div>
+          <div class="label">Bookings & Collaborations</div>
+          <div class="sub">WhatsApp</div>
+        </div>
 
-</div>
+      </div>
 
-<div class="arrow">↗</div>
-</a>
+      <div class="arrow">↗</div>
 
-</div>
+    </a>
 
-<div class="footer">
-See you at the next show.
-</div>
+    <!-- Email -->
+
+    <a class="button mail" href="mailto:zanzamelvin@gmail.com">
+
+      <div class="left">
+
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="5" width="18" height="14" rx="2"/>
+          <path d="M3 7l9 6 9-6"/>
+        </svg>
+
+        <div>
+          <div class="label">Management & Enquiries</div>
+          <div class="sub">zanzamelvin@gmail.com</div>
+        </div>
+
+      </div>
+
+      <div class="arrow">↗</div>
+
+    </a>
+
+  </div>
+
+  <div class="footer">
+    See you at the next show.
+  </div>
 
 </div>
 
