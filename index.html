@@ -4,12 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Connect with Melvin</title>
+<title>Mxlvin</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
 <style>
-
 *{
 margin:0;
 padding:0;
@@ -18,133 +19,199 @@ box-sizing:border-box;
 
 body{
 font-family:'Inter',sans-serif;
-background:linear-gradient(135deg,#07152d,#102347,#18396d);
+background:#07152d;
+background-image:
+radial-gradient(circle at top,#1f4fa3 0%,transparent 45%),
+linear-gradient(180deg,#08152d,#020617);
 min-height:100vh;
 display:flex;
 justify-content:center;
-align-items:center;
-padding:24px;
-}
-
-.card{
-width:100%;
-max-width:420px;
-background:rgba(255,255,255,.12);
-backdrop-filter:blur(18px);
-border:1px solid rgba(255,255,255,.18);
-border-radius:30px;
-padding:34px 28px;
-box-shadow:0 20px 60px rgba(0,0,0,.35);
-text-align:center;
+padding:24px 18px;
 color:white;
 }
 
-.avatar{
-width:96px;
-height:96px;
-border-radius:50%;
-margin:auto;
+.container{
+width:100%;
+max-width:430px;
+}
+
+.hero{
+position:relative;
+overflow:hidden;
+border-radius:30px;
+box-shadow:0 25px 60px rgba(0,0,0,.45);
+}
+
+.hero img{
+width:100%;
+display:block;
+aspect-ratio:4/5;
+object-fit:cover;
+}
+
+.overlay{
+position:absolute;
+inset:0;
+background:linear-gradient(to top,
+rgba(2,6,23,.92) 8%,
+rgba(2,6,23,.30) 55%,
+rgba(2,6,23,.05));
 display:flex;
-justify-content:center;
-align-items:center;
-font-size:40px;
-font-weight:800;
-background:linear-gradient(135deg,#4facfe,#2563eb);
-box-shadow:0 10px 25px rgba(37,99,235,.45);
+align-items:flex-end;
+padding:24px;
 }
 
 h1{
-margin-top:18px;
-font-size:30px;
+font-size:42px;
 font-weight:800;
+letter-spacing:-1px;
 }
 
-.subtitle{
-margin-top:6px;
-margin-bottom:28px;
+.tagline{
+font-size:14px;
 color:#dbeafe;
+margin-top:4px;
+}
+
+.panel{
+margin-top:18px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(16px);
+border:1px solid rgba(255,255,255,.08);
+border-radius:24px;
+padding:18px;
+}
+
+.quote{
+text-align:center;
 font-size:15px;
+line-height:1.6;
+color:#dbeafe;
+margin-bottom:18px;
 }
 
-.button{
+.btn{
 display:flex;
+justify-content:space-between;
 align-items:center;
-justify-content:center;
-gap:12px;
-text-decoration:none;
-padding:16px;
+padding:16px 18px;
+margin:12px 0;
 border-radius:18px;
-margin:14px 0;
-font-weight:700;
-font-size:17px;
-transition:.2s;
+text-decoration:none;
+font-weight:600;
+transition:.18s;
 }
 
-.button:hover{
+.btn:hover{
 transform:translateY(-2px);
 }
 
-.instagram{
+.left{
+display:flex;
+align-items:center;
+gap:14px;
+}
+
+.icon{
+font-size:22px;
+}
+
+.ig{
 background:#E1306C;
 color:white;
 }
 
-.whatsapp{
+.wa{
 background:#25D366;
-color:#062b16;
+color:#052e16;
 }
 
-.email{
-background:rgba(255,255,255,.12);
-border:1px solid rgba(255,255,255,.15);
+.mail{
+background:rgba(255,255,255,.08);
+border:1px solid rgba(255,255,255,.08);
 color:white;
 }
 
-.footer{
-margin-top:22px;
-font-size:13px;
-color:#bfdbfe;
-letter-spacing:.5px;
+.arrow{
+font-size:18px;
+opacity:.75;
 }
 
+.footer{
+margin-top:18px;
+text-align:center;
+font-size:12px;
+letter-spacing:.8px;
+color:#94a3b8;
+}
 </style>
-</head>
 
+</head>
 <body>
 
-<div class="card">
+<div class="container">
 
-<div class="avatar">M</div>
+<div class="hero">
 
-<h1>Melvin Zanza</h1>
+<img src="1002467138.jpg" alt="Mxlvin">
 
-<div class="subtitle">
-Connect with me
+<div class="overlay">
+
+<div>
+<h1>Mxlvin</h1>
+<div class="tagline">Create • Perform • Connect</div>
 </div>
 
-<a class="button instagram"
+</div>
+
+</div>
+
+<div class="panel">
+
+<div class="quote">
+Music is how I translate moments into memories.
+</div>
+
+<a class="btn ig"
 href="https://www.instagram.com/sir.mxlvin?igsi=MWkxYTY4djZ5NW03OA==">
 
-📸 Instagram
+<div class="left">
+<div class="icon">📸</div>
+<div>Instagram</div>
+</div>
+
+<div class="arrow">↗</div>
 
 </a>
 
-<a class="button whatsapp"
+<a class="btn wa"
 href="https://wa.me/263778690204">
 
-💬 WhatsApp
+<div class="left">
+<div class="icon">💬</div>
+<div>Book / Collaborate</div>
+</div>
+
+<div class="arrow">↗</div>
 
 </a>
 
-<a class="button email"
+<a class="btn mail"
 href="mailto:zanzamelvin@gmail.com">
 
-✉️ zanzamelvin@gmail.com
+<div class="left">
+<div class="icon">✉️</div>
+<div>Official Enquiries</div>
+</div>
+
+<div class="arrow">↗</div>
 
 </a>
 
+</div>
+
 <div class="footer">
-@sir.mxlvin
+© MXLVIN
 </div>
 
 </div>
